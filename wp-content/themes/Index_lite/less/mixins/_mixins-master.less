@@ -1,0 +1,36 @@
+// Rem output with px fallback
+.font-size(@font-size) {
+	font-size: (@font-size * 10) * 1px;
+	font-size: @font-size * 1rem;
+}
+
+// Center block
+.center-block {
+	display: block;
+	margin: 0 auto;
+}
+
+// Clearfix
+.clearfix() {
+	content: "";
+	display: table;
+}
+
+// Clear after (not all clearfix need this also)
+.clearfix-after() {
+	clear: both;
+}
+
+
+/*  My - mixins  */
+//Mixins for Shadow box
+.my-box-shadow() {
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+//Mixins for Fonts
+.my-font(@font, @size, @color){
+	font-family: @font;
+	font-size: @size;
+	color: @color;
+}

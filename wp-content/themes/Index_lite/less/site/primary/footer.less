@@ -1,0 +1,108 @@
+.site-footer{
+	background-color: @color1;
+	padding: 30px;
+	.site-footer-wrap{
+		padding: 50px 0;
+		background-color: @color2;
+		.my-box-shadow();
+		.logo-foot{
+			img{margin-bottom: 25px;}
+			span{
+				
+				.my-font('opensans-regular',14px, #acb6ca);
+				line-height: 24px;
+			}
+			.social-navigation{
+
+				margin-top: 25px;
+				ul{
+					li{
+						list-style: none;
+						float: left;
+						margin-right: 2px;
+						border-radius: 25px;
+						a{
+							color: #2f538a !important;
+							background-color: #97a9c5 !important;
+							border-radius: 15px;
+							&:hover{
+								color: #2f538a !important;
+								background-color: #fff !important;
+							}
+						}
+					}
+				}
+			}
+		}
+		.foot-nav{
+			display: flex;
+		    align-items: flex-start;
+		    justify-content: space-between;
+			nav{
+				min-width: 30%;
+				span{
+					.my-font('roboto-bold',16px,#fff);
+					text-transform: uppercase;
+				}
+				ul{
+					margin: 20px 0 0 0;
+					li{
+						list-style: none;
+						.my-font('opensans-regular',14px, #acb6ca);
+							line-height: 24px;
+							text-transform: capitalize;
+							line-height: 24px;
+							//margin-top: 5px;
+						a,span{
+							
+							.my-font('opensans-regular',14px, #acb6ca);
+							line-height: 24px;
+							text-transform: capitalize;
+							line-height: 24px;
+							&:hover{
+								color: #fff;
+								text-decoration: none;
+							}
+						}
+						i{color: @color3; margin-right: 5px;
+							margin-top: 10px;font-size: 18px}
+					}
+				}
+			}
+		}
+	}
+	.coppy-footer{
+		margin-top: 25px;
+		.coppy-footer-wrap{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			span{
+				
+				.my-font('opensans-regular',14px, #acb6ca);
+				strong{
+					color: #fff;
+				}
+			}
+			i{
+				font-size: 35px;
+    			color: #97a9c5;
+    			&:hover{
+    				color: #fff;
+    			}
+			}
+		}
+	}
+}
+
+ @media (min-width: 768px) and (max-width: 992px){
+ 	.logo-foot{
+ 		padding-bottom: 40px;
+ 	}
+ 	.site-footer .site-footer-wrap .foot-nav{
+ 		flex-direction: column;
+ 		text-align: center;
+ 		align-items: center;
+ 	}
+ 	
+ }

@@ -1,0 +1,25 @@
+a {
+	color: @color__link;
+
+	&:visited {
+		color: @color__link-visited;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: @color__link-hover;
+	}
+}
+
+a.read-more{
+	font-family: 'roboto-bold';
+	color: @color3;
+	transition: all 0.5s;
+	text-transform: uppercase;
+	line-height: 45px;
+	&:hover{
+		text-decoration: none;
+		color: @color1 !important;
+		transition: all 0.5s;
+	}
+}

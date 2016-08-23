@@ -1,0 +1,114 @@
+.comments-area{
+	h2.comments-title{
+		margin-top: 60px;
+		font-family: 'roboto-bold';
+		color: #000;
+		margin-bottom: 20px;
+	}
+}
+
+
+
+
+
+ol.comment-list{
+	a{
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	ul.children{
+		margin: 0 30px;
+	}
+	margin: 0;
+	.comment-body{
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		padding-bottom: 20px;
+		.comment-top{
+			width: 100%;
+		    padding: 20px;
+		    background-color: #f2f2f2;
+		    margin-right: 20px;
+		    border-radius: 4px;
+		    position: relative;
+		    &:before{
+		    	content: '';
+		    	position: absolute;
+				left: 100%;
+				border-left: 10px solid #f2f2f2;
+				border-top: 10px solid transparent;
+				border-bottom: 10px solid transparent;
+		    }
+			.comment-author{
+				float: left;
+				.fn{
+					font-size: 21px;
+					color: @color3;
+					font-family: 'roboto-bold';
+					text-transform: capitalize;
+					line-height: 27px;
+				}
+			}
+			.comment-meta{
+				float: right;
+				padding-right: 10px;
+				a{
+					.my-font('opensans-regular', 14px, #b9babc);
+				}
+			}
+			.reply{
+				float: right;
+				a{
+					.my-font('opensans-regular', 14px, @color3);
+				}
+			}
+
+			.clear{
+				width: 100%;
+				padding: 10px 0;
+				border-bottom: 1px solid #e6e6e6;
+				margin-bottom: 20px;
+			}
+			.content-text{
+				float: left;
+				.my-font('opensans-regular', 16px, @color-text);
+			}
+		}
+	}
+
+	.avatar-author{
+		img{border-radius: 4px;}
+	}
+}
+
+.comment-respond{
+	margin-top: 50px;
+	input,textarea{
+		border: 1px solid #e6e6e6;
+		border-radius: 4px;
+		background-color: #f2f2f2;
+		padding-left: 20px;
+	}
+	input{
+		height: 55px;
+		width: 265px;
+	}
+	textarea{
+		width: 100%;
+		height: 180px;
+		padding-top: 20px;
+	}
+	input.submit{
+		.my-font('roboto-bold', 16px, #fff);
+		text-transform: uppercase;
+		background-color: @color3;
+		border: none;
+	}
+
+
+	.comment-reply-title{
+		.my-font('roboto-bold', 27px, #000);
+	}
+}
